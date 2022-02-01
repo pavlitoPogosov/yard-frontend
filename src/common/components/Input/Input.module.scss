@@ -1,0 +1,50 @@
+@import 'src/styles/_tokens.scss';
+
+.Input__container {
+  position: relative;
+  display: block;
+}
+
+.Input__label {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.Input__input {
+  outline: none;
+  border: none;
+  width: 100%;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+.Input__withRightIcon {
+  padding-right: 32px;
+}
+
+.Input__withMargin {
+  margin-bottom: 24px;
+}
+
+.Input__rightIcon {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+}
+
+.Input__eyeIcon {
+  color: $text-tretiary-color;
+  cursor: pointer;
+}
+
+/* variants */
+
+.Input__primary {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 6px;
+  height: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}

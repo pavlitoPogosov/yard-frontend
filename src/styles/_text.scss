@@ -1,0 +1,11 @@
+@mixin text-title-primary {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+}
+
+@mixin text-description-primary {
+  font-size: 14px;
+  line-height: 18px;
+}

@@ -1,0 +1,25 @@
+@import 'src/styles/_tokens.scss';
+
+.UsualModal__container {
+  border-radius: $border-radius-6;
+  padding: 0 26px 32px 16px;
+  background-color: $white-primary-color;
+  filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.19));
+  cursor: auto;
+}
+
+.UsualModal__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 54px;
+}
+
+.UsualModal__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

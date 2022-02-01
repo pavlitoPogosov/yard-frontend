@@ -1,0 +1,69 @@
+@import '_fonts.scss';
+@import '_text.scss';
+@import '_tokens.scss';
+@import '_mixins.scss';
+
+html {
+  box-sizing: border-box;
+  font-family: $font-family-main, $font-family-default;
+  font-weight: 400;
+  font-size: 16px;
+  color: $text-primary-color;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  appearance: textfield;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

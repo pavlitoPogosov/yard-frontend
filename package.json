@@ -1,0 +1,67 @@
+{
+  "name": "yard-front",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint:js": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
+    "lint:css": "stylelint src/**/*.{css,scss} --fix",
+    "postinstall": "is-ci || yarn create-husky",
+    "create-husky": "husky install && husky add .husky/pre-commit \"yarn lint-staged\"",
+    "types": "graphql-codegen --config codegen.js"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.8",
+    "clsx": "^1.1.1",
+    "formik": "^2.2.9",
+    "graphql": "^16.3.0",
+    "graphql-tag": "^2.12.6",
+    "next": "12.0.9",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.49.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.4.0",
+    "@graphql-codegen/typescript": "^2.4.2",
+    "@types/node": "17.0.13",
+    "@types/react": "17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^12.3.2",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.3.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.1.0",
+    "typescript": "4.5.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && tsc --noEmit --project tsconfig.json"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,jsx,ts,tsx,css,scss,md}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix"
+    ]
+  }
+}

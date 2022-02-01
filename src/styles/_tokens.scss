@@ -1,0 +1,33 @@
+/* font family */
+$font-family-default:
+  system-ui, /* macOS 10.11-10.12 */ -apple-system, /* Windows 6+ */ 'Segoe UI',
+  /* Android 4+ */ 'Roboto', /* Ubuntu 10.10+ */ 'Ubuntu', /* Gnome 3+ */ 'Cantarell', /* KDE Plasma 5+ */ 'Noto Sans',
+  /* fallback */ sans-serif, /* macOS emoji */ 'Apple Color Emoji', /* Windows emoji */ 'Segoe UI Emoji',
+  /* Windows emoji */ 'Segoe UI Symbol', /* Linux emoji */ 'Noto Color Emoji';
+$font-family-main: 'Roboto', sans-serif;
+
+/* colors */
+$text-primary-color: #000;
+$text-secondary-color: rgba(0, 0, 0, 0.75);
+$text-tretiary-color: rgba(0, 0, 0, 0.5);
+$purple-primary-color: #7541b8;
+$white-primary-color: #fff;
+$background-primary-color: #f3f3f3;
+$blue-primary-color: #1f70f3;
+$border-gray-color: #e6e6e6;
+$gray-primary-color: #f7f7f7;
+$transition-primary: 0.2s ease-in-out;
+
+/* border radius */
+$border-radius-12: 12px;
+$border-radius-6: 6px;
+
+/* zindex */
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1040;
+$zindex-offcanvas: 1050;
+$zindex-modal: 1060;
+$zindex-popover: 1070;
+$zindex-tooltip: 1080;

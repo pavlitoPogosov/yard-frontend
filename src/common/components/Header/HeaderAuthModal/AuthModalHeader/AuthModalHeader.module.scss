@@ -1,0 +1,29 @@
+@import 'src/styles/_text.scss';
+@import 'src/styles/_tokens.scss';
+
+.AuthModalHeader__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 36px;
+  max-width: 332px;
+  text-align: center;
+}
+
+.AuthModalHeader__logo {
+  margin-bottom: 32px;
+  width: 56px;
+  height: 56px;
+}
+
+.AuthModalHeader__title {
+  @include text-title-primary;
+
+  margin-bottom: 12px;
+}
+
+.AuthModalHeader__description {
+  @include text-description-primary;
+
+  color: $text-secondary-color;
+}

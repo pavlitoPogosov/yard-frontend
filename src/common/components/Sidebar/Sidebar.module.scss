@@ -1,0 +1,47 @@
+@import 'src/styles/_tokens.scss';
+
+.Sidebar__container {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid $border-gray-color;
+  width: 252px;
+  min-height: 100vh;
+}
+
+.Sidebar__header {
+  padding-top: 8px;
+  padding-bottom: 32px;
+  padding-left: 14px;
+}
+
+.Sidebar__mapIcon {
+  background-color: #009688;
+}
+
+.Sidebar__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.Sidebar__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  border-radius: $border-radius-12;
+  width: 40px;
+  height: 40px;
+  background-color: $border-gray-color;
+  transition: background-color $transition-primary;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($border-gray-color, 4%);
+  }
+
+  &:active {
+    background-color: darken($border-gray-color, 6%);
+  }
+}

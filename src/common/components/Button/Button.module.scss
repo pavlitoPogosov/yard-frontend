@@ -1,0 +1,33 @@
+@import 'src/styles/_tokens.scss';
+
+.Button__container {
+  display: block;
+  border: none;
+  font-family: inherit;
+  transition: background-color $transition-primary;
+  cursor: pointer;
+}
+
+/* sizes */
+.Button__medium {
+  border-radius: $border-radius-6;
+  padding: 10px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* colors */
+.Button__primary {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  color: $white-primary-color;
+  background-color: $blue-primary-color;
+
+  &:hover {
+    background-color: darken($blue-primary-color, 4%);
+  }
+
+  &:active {
+    background-color: darken($blue-primary-color, 10%);
+  }
+}

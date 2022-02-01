@@ -1,0 +1,30 @@
+@import 'src/styles/_tokens.scss';
+
+.Overlay__blackout {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: $zindex-modal-backdrop;
+  background: rgba(36, 10, 37, 0.1);
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+}
+
+.Overlay__content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: $zindex-popover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Overlay__childrenWrapper {
+  cursor: auto;
+}

@@ -1,0 +1,9 @@
+@import 'src/styles/_tokens.scss';
+
+.FormLabel__container {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: $text-tretiary-color;
+}

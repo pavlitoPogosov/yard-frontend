@@ -1,0 +1,79 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/typescript",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "react", "prettier"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+
+    "no-console": "warn",
+
+    "@typescript-eslint/no-empty-interface": "off",
+
+    "react/prop-types": "off",
+    "react/display-name": "off",
+
+    "import/prefer-default-export": "off",
+    "import/no-duplicates": 2,
+    "import/first": 2,
+    "import/order": [
+      "error",
+      {
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "react*",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "*",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "./*.[^scss]",
+            "group": "index",
+            "position": "before"
+          },
+          {
+            "pattern": "./*.module.scss",
+            "group": "index",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always"
+      }
+    ],
+    "import/newline-after-import": ["error", { "count": 1 }]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "src": "./src"
+      }
+    }
+  }
+}

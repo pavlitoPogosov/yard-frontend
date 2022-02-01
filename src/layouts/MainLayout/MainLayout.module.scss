@@ -1,0 +1,21 @@
+@import 'src/styles/_tokens.scss';
+
+.MainLayout__container {
+  display: flex;
+  background-color: $background-primary-color;
+}
+
+.MainLayout__sidebar {
+  background-color: $white-primary-color;
+}
+
+.MainLayout__content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.MainLayout__inner {
+  margin-top: 30px;
+  margin-left: 30px;
+}

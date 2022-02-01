@@ -1,0 +1,15 @@
+{
+  "scss.validate": false,
+  "css.validate": false,
+  "less.validate": false,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+
+  "prettier.configPath": ".prettierrc",
+
+  "stylelint.configFile": ".stylelintrc.json",
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "postcss", "scss"]
+}

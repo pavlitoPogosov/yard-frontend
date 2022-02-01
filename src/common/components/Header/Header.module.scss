@@ -1,0 +1,19 @@
+@import 'src/styles/_tokens.scss';
+
+.Header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $border-gray-color;
+  padding: 0 16px;
+  height: 56px;
+  background-color: $white-primary-color;
+}
+
+.Header__authBtn {
+  margin-right: -16px;
+  /* stylelint-disable-next-line declaration-no-important */
+  border-radius: 0 !important;
+  width: 164px;
+  height: 56px;
+}

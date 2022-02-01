@@ -1,0 +1,27 @@
+@import 'src/styles/_tokens.scss';
+
+.Logo__container {
+  display: flex;
+}
+
+.Logo__img {
+  width: 38px;
+  height: 38px;
+}
+
+.Logo__content {
+  margin-left: 14px;
+}
+
+.Logo__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.201em;
+  text-transform: uppercase;
+  color: $purple-primary-color;
+}
+
+.Logo__description {
+  font-size: 14px;
+}
